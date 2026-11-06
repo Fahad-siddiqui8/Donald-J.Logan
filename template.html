@@ -1,0 +1,1878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donald J. Logan | Limited Liability & Business Law Practice | Napa, CA</title>
+  <meta name="description" content="Donald J. Logan, Partner. AV Preeminent rated attorney in Napa, CA specializing in Limited Liability Companies (LLC), Business Law, Real Estate, Estate Planning, and Probate. Over 40 years of legal experience.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* Dark Theme Tokens */
+      --bg-dark-base: #060a0f;
+      --bg-dark-surface: #0a1118;
+      --glass-dark: rgba(255, 255, 255, 0.045);
+      --glass-dark-hover: rgba(255, 255, 255, 0.08);
+      --border-dark-glass: rgba(255, 255, 255, 0.12);
+      --border-dark-subtle: rgba(255, 255, 255, 0.07);
+      
+      /* Light Theme Tokens (Contrasting Sections) */
+      --bg-light-base: #f8fafc;
+      --bg-light-surface: #ffffff;
+      --glass-light: rgba(255, 255, 255, 0.82);
+      --glass-light-hover: rgba(255, 255, 255, 0.95);
+      --border-light-glass: rgba(255, 255, 255, 0.9);
+      --border-light-subtle: #e2e8f0;
+      --shadow-light-glass: 0 20px 45px -10px rgba(15, 23, 42, 0.07), 0 1px 3px rgba(0, 0, 0, 0.03);
+      
+      /* Shared Accents & Highlights */
+      --accent: #cca353;
+      --accent-hover: #b88d3e;
+      --accent-glow: rgba(204, 163, 83, 0.3);
+      --accent-light-tint: rgba(204, 163, 83, 0.12);
+      
+      /* Typography */
+      --text-white: #ffffff;
+      --text-slate-light: #cbd5e1;
+      --text-slate-muted: #94a3b8;
+      
+      --text-dark-headings: #0f172a;
+      --text-dark-body: #334155;
+      --text-dark-muted: #64748b;
+      
+      /* Metrics */
+      --radius-pill: 9999px;
+      --radius-container: 32px;
+      --radius-card: 22px;
+      --font-main: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--bg-dark-base);
+      color: var(--text-white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* Full-Width Section Rules */
+    .section-full {
+      width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+
+    .container-boxed {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    /* Ambient Glow for Dark Sections */
+    .ambient-glow {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(120px);
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.35;
+    }
+
+    /* STICKY FROSTED GLASS NAVBAR */
+    .navbar-wrapper {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+      background: rgba(6, 10, 15, 0.78);
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      border-bottom: 1px solid var(--border-dark-glass);
+      transition: all 0.3s ease;
+    }
+
+    .navbar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 0;
+    }
+
+    .brand-logo {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--text-white);
+      text-decoration: none;
+      letter-spacing: -0.5px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .brand-logo span {
+      color: var(--accent);
+    }
+
+    .nav-pill-menu {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      padding: 6px 10px;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--border-dark-glass);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
+      list-style: none;
+    }
+
+    .nav-pill-menu a {
+      color: var(--text-slate-light);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding: 7px 16px;
+      border-radius: var(--radius-pill);
+      transition: all 0.2s ease;
+    }
+
+    .nav-pill-menu a:hover {
+      color: var(--text-white);
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .btn-gold-pill {
+      background-color: var(--accent);
+      color: #0c1219;
+      font-weight: 700;
+      font-size: 0.86rem;
+      text-decoration: none;
+      padding: 10px 24px;
+      border-radius: var(--radius-pill);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 18px rgba(204, 163, 83, 0.35);
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-gold-pill:hover {
+      background-color: var(--accent-hover);
+      color: #000;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(204, 163, 83, 0.5);
+    }
+
+    .arrow-icon {
+      font-size: 1.1rem;
+      line-height: 1;
+      font-weight: 700;
+    }
+
+    /* ========================================================
+       SECTION 1: HERO (DARK CONTRAST SECTION)
+       ======================================================== */
+    .section-hero {
+      background: radial-gradient(circle at 65% 35%, #18283d 0%, #080d14 75%, #05080c 100%);
+      padding: 64px 0 80px;
+      overflow: hidden;
+      border-bottom: 1px solid var(--border-dark-subtle);
+    }
+
+    .hero-watermark {
+      position: absolute;
+      top: 10%;
+      left: 36%;
+      width: 580px;
+      height: 580px;
+      opacity: 0.06;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 360px 1fr;
+      align-items: center;
+      gap: 36px;
+      position: relative;
+      z-index: 2;
+      padding-bottom: 56px;
+    }
+
+    .hero-badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--border-dark-glass);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
+      border-radius: var(--radius-pill);
+      padding: 7px 18px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--text-slate-light);
+      margin-bottom: 24px;
+    }
+
+    .hero-badge-pill svg {
+      color: var(--accent);
+    }
+
+    .hero-headline {
+      font-size: 3.6rem;
+      font-weight: 800;
+      line-height: 1.08;
+      letter-spacing: -1.2px;
+      color: var(--text-white);
+      margin-bottom: 22px;
+    }
+
+    .hero-headline .text-gold {
+      color: var(--accent);
+      text-shadow: 0 0 30px rgba(204, 163, 83, 0.3);
+    }
+
+    .hero-subtext {
+      color: var(--text-slate-muted);
+      font-size: 1.02rem;
+      line-height: 1.65;
+      margin-bottom: 28px;
+      max-width: 440px;
+    }
+
+    .hero-contact-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .contact-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: var(--glass-dark);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--border-dark-glass);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius-pill);
+      padding: 8px 16px;
+      font-size: 0.82rem;
+      color: #e2e8f0;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .contact-chip:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: rgba(204, 163, 83, 0.12);
+      transform: translateY(-1px);
+    }
+
+    /* Portrait Glass Card */
+    .hero-center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
+    .portrait-halo {
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      background: radial-gradient(circle, rgba(204, 163, 83, 0.28) 0%, rgba(20, 35, 55, 0) 70%);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 0;
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .portrait-card {
+      position: relative;
+      z-index: 2;
+      width: 300px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(32px) saturate(190%);
+      -webkit-backdrop-filter: blur(32px) saturate(190%);
+      border: 2px solid rgba(204, 163, 83, 0.5);
+      border-radius: 30px;
+      overflow: hidden;
+      box-shadow: 0 25px 50px -10px rgba(0, 0, 0, 0.75), 0 0 40px rgba(204, 163, 83, 0.2), inset 0 1px 0 rgba(255,255,255,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .portrait-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 30px 60px -10px rgba(0, 0, 0, 0.85), 0 0 50px rgba(204, 163, 83, 0.3);
+    }
+
+    .portrait-img-box {
+      width: 100%;
+      height: 260px;
+      overflow: hidden;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .portrait-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      filter: contrast(1.05) brightness(1.02);
+    }
+
+    .portrait-info {
+      padding: 16px 20px;
+      text-align: center;
+      background: rgba(8, 14, 22, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-top: 1px solid var(--border-dark-glass);
+    }
+
+    .portrait-name {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text-white);
+      letter-spacing: -0.2px;
+    }
+
+    .portrait-role {
+      font-size: 0.78rem;
+      color: var(--accent);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 2px;
+    }
+
+    /* Floating Glass Review Card */
+    .hero-right {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .glass-review-card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(32px) saturate(190%);
+      -webkit-backdrop-filter: blur(32px) saturate(190%);
+      border: 1px solid var(--border-dark-glass);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+      border-radius: var(--radius-card);
+      padding: 26px;
+      max-width: 330px;
+      transition: transform 0.25s ease;
+    }
+
+    .glass-review-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(204, 163, 83, 0.4);
+    }
+
+    .review-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+    }
+
+    .review-logos {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .review-logo-circle {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .logo-google {
+      background: #4285f4;
+      box-shadow: 0 2px 8px rgba(66, 133, 244, 0.4);
+    }
+
+    .logo-av {
+      background: var(--accent);
+      color: #0c1219;
+      box-shadow: 0 2px 8px rgba(204, 163, 83, 0.4);
+    }
+
+    .stars {
+      color: #facc15;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      font-weight: 700;
+    }
+
+    .review-count {
+      font-size: 0.74rem;
+      color: var(--text-slate-muted);
+      display: block;
+      text-align: right;
+    }
+
+    .review-body {
+      font-size: 0.88rem;
+      color: var(--text-slate-light);
+      line-height: 1.55;
+      margin-bottom: 20px;
+    }
+
+    .btn-start-case {
+      width: 100%;
+      background: linear-gradient(135deg, var(--accent), #dfb664);
+      color: #0c1219;
+      font-weight: 700;
+      font-size: 0.84rem;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: var(--radius-pill);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 14px rgba(204, 163, 83, 0.3);
+    }
+
+    .btn-start-case:hover {
+      background: var(--accent-hover);
+      color: #000;
+      transform: translateY(-1px);
+    }
+
+    /* Hero Stats Glass Panel */
+    .hero-stats-panel {
+      background: rgba(255, 255, 255, 0.035);
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      border: 1px solid var(--border-dark-glass);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 16px 40px rgba(0, 0, 0, 0.45);
+      border-radius: var(--radius-container);
+      padding: 28px 36px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .stat-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .stat-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-dark-glass);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent);
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+
+    .stat-text h4 {
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: var(--text-white);
+      line-height: 1.1;
+      letter-spacing: -0.5px;
+    }
+
+    .stat-text p {
+      font-size: 0.78rem;
+      color: var(--text-slate-muted);
+      text-transform: capitalize;
+    }
+
+    /* ========================================================
+       SECTION 2: ABOUT ME (CRISP LIGHT CONTRAST SECTION)
+       ======================================================== */
+    .section-about {
+      background: linear-gradient(180deg, #f8fafc 0%, #eef2f6 100%);
+      color: var(--text-dark-body);
+      padding: 104px 0;
+      border-bottom: 1px solid #e2e8f0;
+      position: relative;
+    }
+
+    .about-glass-card {
+      background: var(--glass-light);
+      backdrop-filter: blur(28px) saturate(180%);
+      -webkit-backdrop-filter: blur(28px) saturate(180%);
+      border: 1px solid var(--border-light-glass);
+      box-shadow: var(--shadow-light-glass), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+      border-radius: var(--radius-container);
+      padding: 68px 60px;
+      display: grid;
+      grid-template-columns: 440px 1fr;
+      gap: 64px;
+      align-items: flex-start;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pill-tag-light-glass {
+      display: inline-block;
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+      border-radius: var(--radius-pill);
+      padding: 5px 16px;
+      font-size: 0.74rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #334155;
+      margin-bottom: 22px;
+    }
+
+    .about-heading-bold {
+      font-size: 3.1rem;
+      font-weight: 800;
+      color: var(--text-dark-headings);
+      line-height: 1.1;
+      letter-spacing: -1.2px;
+    }
+
+    .about-lead-text {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text-dark-headings);
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+
+    .about-body-text {
+      font-size: 1rem;
+      color: var(--text-dark-body);
+      line-height: 1.8;
+      margin-bottom: 22px;
+    }
+
+    .about-body-text a {
+      color: #0284c7;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      font-weight: 700;
+      transition: color 0.2s;
+    }
+
+    .about-body-text a:hover {
+      color: var(--accent-hover);
+    }
+
+    /* ========================================================
+       SECTION 3: TRUSTED EXPERTISE (DARK CONTRAST SECTION)
+       ======================================================== */
+    .section-services {
+      background: radial-gradient(circle at 50% 30%, #152538 0%, #060a0f 80%);
+      color: var(--text-white);
+      padding: 104px 0;
+      border-bottom: 1px solid var(--border-dark-subtle);
+    }
+
+    .pill-tag-dark-glass {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--border-dark-glass);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
+      border-radius: var(--radius-pill);
+      padding: 5px 16px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    .services-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 48px;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    .services-headline {
+      font-size: 3.1rem;
+      font-weight: 800;
+      letter-spacing: -1px;
+      line-height: 1.12;
+      color: var(--text-white);
+    }
+
+    .services-headline .text-gold {
+      color: var(--accent);
+      text-shadow: 0 0 25px rgba(204, 163, 83, 0.3);
+    }
+
+    .services-nav-col {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .services-subtext {
+      color: var(--text-slate-muted);
+      font-size: 0.95rem;
+      max-width: 340px;
+      text-align: right;
+    }
+
+    .carousel-arrows {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn-circle-arrow {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--glass-dark);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--border-dark-glass);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 1.25rem;
+      transition: all 0.2s;
+    }
+
+    .btn-circle-arrow:hover {
+      background: var(--accent);
+      color: #0c1219;
+      border-color: var(--accent);
+      transform: scale(1.05);
+    }
+
+    /* Cards Track */
+    .services-cards-track {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      padding-bottom: 16px;
+      scrollbar-width: none;
+    }
+
+    .services-cards-track::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* White High-Contrast Service Card (matching reference) */
+    .service-card-contrast-light {
+      background: rgba(255, 255, 255, 0.96);
+      color: var(--text-dark-headings);
+      border-radius: var(--radius-card);
+      padding: 30px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 400px;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+      position: relative;
+    }
+
+    .service-card-contrast-light:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
+    }
+
+    .service-card-contrast-light .service-card-tag {
+      background: #f1f5f9;
+      color: #334155;
+      border: 1px solid #e2e8f0;
+      border-radius: var(--radius-pill);
+      padding: 5px 14px;
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      display: inline-block;
+      margin-bottom: 16px;
+    }
+
+    .service-card-contrast-light .service-card-title {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--text-dark-headings);
+      line-height: 1.25;
+      margin-bottom: 14px;
+    }
+
+    .service-card-contrast-light .service-card-desc {
+      font-size: 0.88rem;
+      line-height: 1.6;
+      color: var(--text-dark-body);
+      margin-bottom: 18px;
+    }
+
+    .service-card-contrast-light .service-card-img-placeholder {
+      width: 100%;
+      height: 135px;
+      border-radius: 14px;
+      margin-bottom: 16px;
+      overflow: hidden;
+      background: #eef2f6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .service-card-contrast-light .service-card-img-placeholder svg {
+      width: 50px;
+      height: 50px;
+      color: var(--text-dark-headings);
+      opacity: 0.85;
+    }
+
+    .service-card-contrast-light .btn-card-arrow {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      color: var(--text-dark-headings);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      font-weight: 700;
+      transition: all 0.25s;
+      text-decoration: none;
+    }
+
+    .service-card-contrast-light .btn-card-arrow:hover {
+      background: var(--accent);
+      color: #0c1219;
+      border-color: var(--accent);
+    }
+
+    /* Highlighted Dark Glass Card (Real Estate & Vineyard Law) */
+    .service-card-contrast-dark {
+      background: linear-gradient(150deg, rgba(204, 163, 83, 0.18) 0%, rgba(15, 24, 36, 0.9) 100%);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1.5px solid rgba(204, 163, 83, 0.55);
+      border-radius: var(--radius-card);
+      padding: 30px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 400px;
+      transition: all 0.3s ease;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+      color: var(--text-white);
+      position: relative;
+    }
+
+    .service-card-contrast-dark:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.65), 0 0 30px rgba(204, 163, 83, 0.2);
+    }
+
+    .service-card-contrast-dark .service-card-tag {
+      background: rgba(204, 163, 83, 0.22);
+      border: 1px solid rgba(204, 163, 83, 0.45);
+      color: #fde047;
+      border-radius: var(--radius-pill);
+      padding: 5px 14px;
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      display: inline-block;
+      margin-bottom: 16px;
+    }
+
+    .service-card-contrast-dark .service-card-title {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--text-white);
+      line-height: 1.25;
+      margin-bottom: 14px;
+    }
+
+    .service-card-contrast-dark .service-card-desc {
+      font-size: 0.88rem;
+      line-height: 1.6;
+      color: var(--text-slate-light);
+      margin-bottom: 18px;
+    }
+
+    .service-card-contrast-dark .service-card-img-placeholder {
+      width: 100%;
+      height: 135px;
+      border-radius: 14px;
+      margin-bottom: 16px;
+      overflow: hidden;
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(204, 163, 83, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .service-card-contrast-dark .service-card-img-placeholder svg {
+      width: 50px;
+      height: 50px;
+      color: var(--accent);
+      opacity: 0.95;
+    }
+
+    .service-card-contrast-dark .btn-card-arrow {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      font-weight: 700;
+      transition: all 0.25s;
+      text-decoration: none;
+    }
+
+    .service-card-contrast-dark .btn-card-arrow:hover {
+      background: var(--accent);
+      color: #0c1219;
+      border-color: var(--accent);
+    }
+
+    /* ========================================================
+       SECTION 4: CREDENTIALS (LIGHT CONTRAST SECTION)
+       ======================================================== */
+    .section-works {
+      background: linear-gradient(180deg, #edf2f7 0%, #f8fafc 100%);
+      color: var(--text-dark-body);
+      padding: 104px 0;
+      border-bottom: 1px solid #e2e8f0;
+      position: relative;
+    }
+
+    .works-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 44px;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .works-headline {
+      font-size: 3.1rem;
+      font-weight: 800;
+      letter-spacing: -1.2px;
+      color: var(--text-dark-headings);
+      line-height: 1.12;
+    }
+
+    .works-subtext {
+      color: var(--text-dark-muted);
+      font-size: 0.95rem;
+      max-width: 380px;
+      text-align: right;
+    }
+
+    .works-glass-card {
+      background: var(--glass-light);
+      backdrop-filter: blur(28px) saturate(180%);
+      -webkit-backdrop-filter: blur(28px) saturate(180%);
+      border: 1px solid var(--border-light-glass);
+      box-shadow: var(--shadow-light-glass), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+      border-radius: var(--radius-container);
+      padding: 44px 52px;
+    }
+
+    .table-headings-row {
+      display: grid;
+      grid-template-columns: 2fr 1.3fr 1.5fr 48px;
+      padding: 12px 18px;
+      font-size: 0.8rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--text-dark-muted);
+      border-bottom: 1px solid #e2e8f0;
+      margin-bottom: 8px;
+    }
+
+    .work-item-row {
+      display: grid;
+      grid-template-columns: 2fr 1.3fr 1.5fr 48px;
+      align-items: center;
+      padding: 20px 18px;
+      border-bottom: 1px solid #f1f5f9;
+      border-radius: 12px;
+      transition: all 0.25s ease;
+    }
+
+    .work-item-row:hover {
+      background: #ffffff;
+      box-shadow: 0 4px 18px rgba(15, 23, 42, 0.06);
+      transform: translateX(6px);
+    }
+
+    .work-title {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--text-dark-headings);
+    }
+
+    .work-category-pill {
+      display: inline-block;
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+      border-radius: var(--radius-pill);
+      padding: 5px 12px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #334155;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      width: fit-content;
+    }
+
+    .work-date {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: #475569;
+    }
+
+    .work-action-btn {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-dark-headings);
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 1rem;
+      transition: all 0.2s;
+    }
+
+    .work-item-row:hover .work-action-btn {
+      background: var(--accent);
+      color: #0c1219;
+      border-color: var(--accent);
+      transform: scale(1.08);
+    }
+
+    /* ========================================================
+       SECTION 5: OFFICE & CASE CONSULTATION (DARK CONTRAST)
+       ======================================================== */
+    .section-contact {
+      background: radial-gradient(circle at 75% 30%, #17283c 0%, #06090e 80%);
+      color: var(--text-white);
+      padding: 104px 0;
+      border-bottom: 1px solid var(--border-dark-subtle);
+    }
+
+    .contact-glass-container {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .contact-info-col h3 {
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: -1.2px;
+      margin-bottom: 14px;
+      color: var(--text-white);
+    }
+
+    .contact-info-col h3 .text-gold {
+      color: var(--accent);
+      text-shadow: 0 0 25px rgba(204, 163, 83, 0.3);
+    }
+
+    .contact-info-col p.lead-desc {
+      color: var(--text-slate-muted);
+      font-size: 1.02rem;
+      margin-bottom: 32px;
+      line-height: 1.65;
+    }
+
+    .office-glass-box {
+      background: rgba(255, 255, 255, 0.045);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--border-dark-glass);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 12px 30px rgba(0, 0, 0, 0.4);
+      border-radius: 18px;
+      padding: 22px 28px;
+      margin-bottom: 18px;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .office-glass-box:hover {
+      transform: translateX(4px);
+      border-color: rgba(204, 163, 83, 0.45);
+    }
+
+    .office-glass-box h5 {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--accent);
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    .office-glass-box p {
+      color: #f1f5f9;
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0;
+      line-height: 1.5;
+    }
+
+    .office-glass-box a {
+      color: #f1f5f9;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .office-glass-box a:hover {
+      color: var(--accent);
+    }
+
+    /* Form Glass Card */
+    .form-glass-card {
+      background: rgba(255, 255, 255, 0.045);
+      backdrop-filter: blur(32px) saturate(190%);
+      -webkit-backdrop-filter: blur(32px) saturate(190%);
+      border: 1px solid var(--border-dark-glass);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.18);
+      border-radius: var(--radius-container);
+      padding: 42px;
+    }
+
+    .form-glass-card h4 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+      color: var(--text-white);
+    }
+
+    .form-glass-card p {
+      font-size: 0.88rem;
+      color: var(--text-slate-muted);
+      margin-bottom: 24px;
+    }
+
+    .form-group-modern {
+      margin-bottom: 18px;
+    }
+
+    .form-group-modern label {
+      display: block;
+      font-size: 0.76rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: #cbd5e1;
+      margin-bottom: 6px;
+    }
+
+    .input-glass {
+      width: 100%;
+      background: rgba(6, 10, 16, 0.7);
+      border: 1px solid var(--border-dark-glass);
+      box-shadow: inset 0 2px 4px rgba(0,0,0,0.4);
+      border-radius: 12px;
+      padding: 12px 16px;
+      color: #ffffff;
+      font-family: inherit;
+      font-size: 0.92rem;
+      transition: all 0.25s;
+    }
+
+    .input-glass:focus {
+      outline: none;
+      border-color: var(--accent);
+      background: rgba(6, 10, 16, 0.9);
+      box-shadow: 0 0 0 3px rgba(204, 163, 83, 0.25);
+    }
+
+    textarea.input-glass {
+      resize: vertical;
+      min-height: 90px;
+    }
+
+    .disclaimer-row {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      margin-bottom: 22px;
+      font-size: 0.74rem;
+      color: var(--text-slate-muted);
+      line-height: 1.45;
+    }
+
+    .disclaimer-row input {
+      margin-top: 3px;
+    }
+
+    /* ========================================================
+       FOOTER (DARK FULL WIDTH)
+       ======================================================== */
+    .site-footer {
+      width: 100%;
+      background: #04070a;
+      border-top: 1px solid var(--border-dark-subtle);
+      padding: 56px 0 36px;
+      color: #64748b;
+      font-size: 0.85rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .footer-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      margin-bottom: 24px;
+    }
+
+    .footer-logo {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .footer-logo span {
+      color: var(--accent);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .footer-links a {
+      color: var(--text-slate-light);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent);
+    }
+
+    .footer-disclaimer-text {
+      font-size: 0.75rem;
+      line-height: 1.65;
+      color: #475569;
+    }
+
+    /* Toast Notification */
+    .toast-pill {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      background: rgba(15, 35, 28, 0.95);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid #10b981;
+      color: #ecfdf5;
+      padding: 16px 26px;
+      border-radius: var(--radius-pill);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+      display: none;
+      align-items: center;
+      gap: 12px;
+      z-index: 1000;
+      font-size: 0.92rem;
+      font-weight: 700;
+    }
+
+    /* Responsive */
+    @media (max-width: 1120px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+      }
+      .hero-headline {
+        font-size: 3rem;
+      }
+      .hero-subtext {
+        margin: 0 auto 24px;
+      }
+      .hero-contact-chips {
+        justify-content: center;
+      }
+      .hero-right {
+        justify-content: center;
+      }
+      .hero-stats-panel {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .about-glass-card {
+        grid-template-columns: 1fr;
+        gap: 36px;
+        padding: 44px 32px;
+      }
+      .services-cards-track {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .table-headings-row, .work-item-row {
+        grid-template-columns: 2fr 1fr 1fr 36px;
+      }
+      .contact-glass-container {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container-boxed {
+        padding: 0 20px;
+      }
+      .nav-pill-menu {
+        display: none;
+      }
+      .hero-stats-panel {
+        grid-template-columns: 1fr;
+      }
+      .services-cards-track {
+        grid-template-columns: 1fr;
+      }
+      .table-headings-row {
+        display: none;
+      }
+      .work-item-row {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 18px 12px;
+      }
+      .works-glass-card {
+        padding: 24px 18px;
+      }
+      .works-header, .services-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .works-subtext, .services-subtext {
+        text-align: left;
+      }
+      .form-glass-card {
+        padding: 26px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- STICKY FROSTED GLASS NAVIGATION -->
+  <header class="navbar-wrapper">
+    <div class="container-boxed">
+      <div class="navbar-inner">
+        <a href="#home" class="brand-logo">
+          Donald<span>.</span> Logan
+        </a>
+
+        <!-- Translucent Pill Nav Menu -->
+        <ul class="nav-pill-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#credentials">Credentials</a></li>
+          <li><a href="#office">Our Office</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Action Button -->
+        <a href="#contact" class="btn-gold-pill">
+          Get a free quote <span class="arrow-icon">↗</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================
+       SECTION 1: HERO (DARK CONTRAST SECTION)
+       ======================================================== -->
+  <section class="section-full section-hero" id="home">
+    <svg class="hero-watermark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+      <path d="M12 3v18M5 7l7-4 7 4M5 7v4a4 4 0 0 0 8 0V7M19 7v4a4 4 0 0 1-8 0V7"></path>
+    </svg>
+
+    <div class="container-boxed">
+      <div class="hero-grid">
+        
+        <!-- Left: Headline & Tags -->
+        <div class="hero-left">
+          <div class="hero-badge-pill">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            AV PREEMINENT® RATED : 40+ YRS
+          </div>
+
+          <h1 class="hero-headline">
+            Your Legal Solutions<br>
+            <span class="text-gold">Partner</span>
+          </h1>
+
+          <p class="hero-subtext">
+            Donald J. Logan, Senior Partner. Delivering results-driven counsel in Limited Liability Companies (LLC), business transactions, commercial real estate, and sophisticated estate planning in Napa, CA.
+          </p>
+
+          <div class="hero-contact-chips">
+            <a href="tel:7072578100" class="contact-chip">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              707-257-8100
+            </a>
+            <span class="contact-chip">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+              Fax: 707-257-6479
+            </span>
+            <a href="mailto:dlogan@napacounsel.com?subject=Legal%20Consultation%20Inquiry" class="contact-chip">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              Donald J. Logan
+            </a>
+          </div>
+        </div>
+
+        <!-- Center: Portrait with Halo & Glass Frame -->
+        <div class="hero-center">
+          <div class="portrait-halo"></div>
+          <div class="portrait-card">
+            <div class="portrait-img-box">
+              <img src="data:image/png;base64,{{DONALD_B64}}" alt="Donald J. Logan - Partner" />
+            </div>
+            <div class="portrait-info">
+              <div class="portrait-name">Donald J. Logan</div>
+              <div class="portrait-role">Partner &bull; Napa, CA</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Glass Review Card -->
+        <div class="hero-right">
+          <div class="glass-review-card">
+            <div class="review-header">
+              <div class="review-logos">
+                <div class="review-logo-circle logo-google">G</div>
+                <div class="review-logo-circle logo-av">AV</div>
+              </div>
+              <div class="review-rating">
+                <div class="stars">★★★★★ 4.9</div>
+                <span class="review-count">2k+ Peer Endorsements</span>
+              </div>
+            </div>
+            <p class="review-body">
+              Strategic legal guidance for your limited liability company, business transactions, and estate planning needs.
+            </p>
+            <a href="#contact" class="btn-start-case">
+              Start your case <span class="arrow-icon">↗</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Integrated Glass Stats Panel -->
+      <div class="hero-stats-panel">
+        <div class="stat-item">
+          <div class="stat-icon">🎓</div>
+          <div class="stat-text">
+            <h4>40+</h4>
+            <p>Years of Experience</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">📈</div>
+          <div class="stat-text">
+            <h4>95%</h4>
+            <p>AV Preeminent® Rating</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">💼</div>
+          <div class="stat-text">
+            <h4>250+</h4>
+            <p>LLC & Real Estate Matters</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">⚖️</div>
+          <div class="stat-text">
+            <h4>100%</h4>
+            <p>State & Federal Admitted</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION 2: ABOUT ME (CRISP LIGHT CONTRAST SECTION)
+       ======================================================== -->
+  <section class="section-full section-about" id="about">
+    <div class="container-boxed">
+      <div class="about-glass-card">
+        <div>
+          <span class="pill-tag-light-glass">ABOUT ME</span>
+          <h2 class="about-heading-bold">
+            Built On<br>
+            Integrity,<br>
+            Driven By<br>
+            Justice
+          </h2>
+        </div>
+
+        <div>
+          <p class="about-lead-text">
+            We are a client-focused law practice dedicated to protecting your rights and delivering clear, results-driven legal solutions.
+          </p>
+          <p class="about-body-text">
+            Donald Logan is an attorney focusing his practice in the areas of <strong>real estate law, business law, estate planning, probate, and trust administration</strong>. With over 40 years of legal experience, Mr. Logan's reputation in the Napa, California legal community has earned him the prestigious <a href="https://www.martindale.com" target="_blank" rel="noopener">AV Rating from Martindale-Hubbell</a>, signifying preeminent legal ability and the highest level of ethical standards.
+          </p>
+          <p class="about-body-text">
+            Outside of his practice of law, Mr. Logan is dedicated to staying involved in the Napa Valley community, and he has held several board positions on area charities. In 2005, he was named to Northern California <a href="https://www.superlawyers.com" target="_blank" rel="noopener">SuperLawyers</a>, a listing of attorneys in each state who received the highest point totals, as chosen by their peers and through the independent research of Law & Politics magazine.
+          </p>
+          
+          <a href="#contact" class="btn-gold-pill" style="margin-top: 10px;">
+            Get a free consultation <span class="arrow-icon">↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION 3: TRUSTED EXPERTISE (DARK CONTRAST SECTION)
+       ======================================================== -->
+  <section class="section-full section-services" id="services">
+    <div class="container-boxed">
+      <div class="services-header">
+        <div>
+          <span class="pill-tag-dark-glass">MY SERVICES</span>
+          <h2 class="services-headline">
+            Trusted<br>
+            <span class="text-gold">Expertise</span>
+          </h2>
+        </div>
+
+        <div class="services-nav-col">
+          <p class="services-subtext">
+            I deliver trusted legal services with proven experience and a results-driven focus.
+          </p>
+          <div class="carousel-arrows">
+            <button class="btn-circle-arrow" onclick="scrollCarousel(-1)" aria-label="Previous service">‹</button>
+            <button class="btn-circle-arrow" onclick="scrollCarousel(1)" aria-label="Next service">›</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Glass & Contrast Cards Track -->
+      <div class="services-cards-track" id="servicesTrack">
+        
+        <!-- Card 1: Corporate & Business Law (Contrasting White Card) -->
+        <div class="service-card-contrast-light">
+          <div>
+            <span class="service-card-tag">CORPORATE</span>
+            <h3 class="service-card-title">Corporate &amp; Business Law</h3>
+            <div class="service-card-img-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <p class="service-card-desc">
+              Legal support for startups, SMEs, and established entities. From limited liability company (LLC) formation to operating agreements and commercial contracts.
+            </p>
+          </div>
+          <div style="display: flex; justify-content: flex-end; padding-top: 10px;">
+            <a href="#contact" class="btn-card-arrow" title="Inquire about Business Law">↗</a>
+          </div>
+        </div>
+
+        <!-- Card 2: Real Estate Law (Contrasting Highlighted Dark Card) -->
+        <div class="service-card-contrast-dark">
+          <div>
+            <span class="service-card-tag">REAL ESTATE</span>
+            <h3 class="service-card-title">Real Estate &amp; Vineyard Law</h3>
+            <div class="service-card-img-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+            </div>
+            <p class="service-card-desc">
+              Decades of experience in Napa Valley vineyard acquisitions, commercial leases, land use, easements, and property transaction closings.
+            </p>
+          </div>
+          <div style="display: flex; justify-content: flex-end; padding-top: 10px;">
+            <a href="#contact" class="btn-card-arrow" title="Inquire about Real Estate">↗</a>
+          </div>
+        </div>
+
+        <!-- Card 3: Estate Planning & Trusts (Contrasting White Card) -->
+        <div class="service-card-contrast-light">
+          <div>
+            <span class="service-card-tag">ESTATE PLANNING</span>
+            <h3 class="service-card-title">Estate Planning &amp; Trusts</h3>
+            <div class="service-card-img-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
+            </div>
+            <p class="service-card-desc">
+              Custom-tailored revocable living trusts, durable powers of attorney, healthcare directives, and wealth succession safeguarding family estates.
+            </p>
+          </div>
+          <div style="display: flex; justify-content: flex-end; padding-top: 10px;">
+            <a href="#contact" class="btn-card-arrow" title="Inquire about Estate Planning">↗</a>
+          </div>
+        </div>
+
+        <!-- Card 4: Probate Administration (Contrasting White Card) -->
+        <div class="service-card-contrast-light">
+          <div>
+            <span class="service-card-tag">PROBATE</span>
+            <h3 class="service-card-title">Probate Administration</h3>
+            <div class="service-card-img-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </div>
+            <p class="service-card-desc">
+              Dedicated legal guidance for executors and beneficiaries through formal California probate court filings, accounting, and asset distribution.
+            </p>
+          </div>
+          <div style="display: flex; justify-content: flex-end; padding-top: 10px;">
+            <a href="#contact" class="btn-card-arrow" title="Inquire about Probate">↗</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION 4: CREDENTIALS (LIGHT CONTRAST SECTION)
+       ======================================================== -->
+  <section class="section-full section-works" id="credentials">
+    <div class="container-boxed">
+      <div class="works-header">
+        <div>
+          <span class="pill-tag-light-glass">THE WORKS I AM PROUD OF</span>
+          <h2 class="works-headline">Some Of My<br>Legal Credentials</h2>
+        </div>
+        <div>
+          <p class="works-subtext">
+            Explore Donald J. Logan's bar admissions, academic appointments, degrees, and community leadership.
+          </p>
+          <a href="#contact" class="btn-gold-pill" style="margin-top: 14px; float: right;">
+            Schedule Case Review <span class="arrow-icon">↗</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Glass Table Card on Light Background -->
+      <div class="works-glass-card">
+        <div class="table-headings-row">
+          <span>Titles &amp; Institutions</span>
+          <span>Categories</span>
+          <span>Date &amp; Details</span>
+          <span></span>
+        </div>
+
+        <div class="work-item-row">
+          <div class="work-title">State Bar of California</div>
+          <div><span class="work-category-pill">Admissions</span></div>
+          <div class="work-date">Licensed Attorney • California Courts</div>
+          <div><a href="#contact" class="work-action-btn">↗</a></div>
+        </div>
+
+        <div class="work-item-row">
+          <div class="work-title">U.S. District Court for Northern District of California</div>
+          <div><span class="work-category-pill">Federal Admissions</span></div>
+          <div class="work-date">United States District Court</div>
+          <div><a href="#contact" class="work-action-btn">↗</a></div>
+        </div>
+
+        <div class="work-item-row">
+          <div class="work-title">University of San Diego School of Law</div>
+          <div><span class="work-category-pill">Juris Doctor (J.D.)</span></div>
+          <div class="work-date">1980 • Ralph Gano Miller Award for Tax Studies</div>
+          <div><a href="#contact" class="work-action-btn">↗</a></div>
+        </div>
+
+        <div class="work-item-row">
+          <div class="work-title">Pacific Union College</div>
+          <div><span class="work-category-pill">Bachelor of Science</span></div>
+          <div class="work-date">B.S. Degree • 1977</div>
+          <div><a href="#contact" class="work-action-btn">↗</a></div>
+        </div>
+
+        <div class="work-item-row">
+          <div class="work-title">Napa Valley College</div>
+          <div><span class="work-category-pill">Teaching Experience</span></div>
+          <div class="work-date">Lecturer, Real Estate Law • 1983-1987</div>
+          <div><a href="#contact" class="work-action-btn">↗</a></div>
+        </div>
+
+        <div class="work-item-row">
+          <div class="work-title">Pacific Union College</div>
+          <div><span class="work-category-pill">Academic Faculty</span></div>
+          <div class="work-date">Adjunct Professor, Business Law • 2006-2007</div>
+          <div><a href="#contact" class="work-action-btn">↗</a></div>
+        </div>
+
+        <div class="work-item-row">
+          <div class="work-title">Napa County Bar Association</div>
+          <div><span class="work-category-pill">Membership</span></div>
+          <div class="work-date">Active Member • Local Bar Association</div>
+          <div><a href="#contact" class="work-action-btn">↗</a></div>
+        </div>
+
+        <div class="work-item-row">
+          <div class="work-title">Pacific Union College Board of Trustees</div>
+          <div><span class="work-category-pill">Community Board</span></div>
+          <div class="work-date">Member, Board of Trustees • 1986-2009</div>
+          <div><a href="#contact" class="work-action-btn">↗</a></div>
+        </div>
+
+        <div class="work-item-row">
+          <div class="work-title">St. Helena Hospital Board of Directors</div>
+          <div><span class="work-category-pill">Healthcare Board</span></div>
+          <div class="work-date">Member, Board of Directors • 1993-2008</div>
+          <div><a href="#contact" class="work-action-btn">↗</a></div>
+        </div>
+
+        <div class="work-item-row">
+          <div class="work-title">Hospice of Napa Valley</div>
+          <div><span class="work-category-pill">Philanthropic Leadership</span></div>
+          <div class="work-date">1998-2004 and 2012-present</div>
+          <div><a href="#contact" class="work-action-btn">↗</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION 5: OFFICE & CASE CONSULTATION (DARK CONTRAST)
+       ======================================================== -->
+  <section class="section-full section-contact" id="contact">
+    <div class="container-boxed">
+      <div class="contact-glass-container">
+        
+        <!-- Left: Napa Office Details -->
+        <div class="contact-info-col" id="office">
+          <span class="pill-tag-dark-glass">NAPA OFFICE</span>
+          <h3>Our Office &amp; <span class="text-gold">Counsel</span></h3>
+          <p class="lead-desc">
+            Connect directly with Donald J. Logan to discuss your limited liability company, commercial real estate transaction, or estate administration.
+          </p>
+
+          <div class="office-glass-box">
+            <h5>Physical Address</h5>
+            <p>2350 First Street, Napa, California 94559</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=2350+First+Street+Napa+California+94559" target="_blank" rel="noopener" style="font-size: 0.84rem; color: var(--accent); display: inline-flex; align-items: center; gap: 4px; margin-top: 8px;">
+              Open Google Maps Directions ↗
+            </a>
+          </div>
+
+          <div class="office-glass-box">
+            <h5>Direct Contact</h5>
+            <p>
+              Phone: <a href="tel:7072578100">(707) 257-8100</a><br>
+              Fax: 707-257-6479<br>
+              Email: <a href="mailto:dlogan@napacounsel.com?subject=Legal%20Inquiry%20from%20Website">Donald J. Logan</a>
+            </p>
+          </div>
+
+          <div class="office-glass-box">
+            <h5>Office Hours</h5>
+            <p style="font-weight: 500; font-size: 0.9rem; color: var(--text-slate-light);">
+              Monday &ndash; Friday: 8:30 AM &ndash; 5:00 PM PST<br>
+              <em>Consultations scheduled in advance</em>
+            </p>
+          </div>
+        </div>
+
+        <!-- Right: Glass Consultation Form -->
+        <div class="form-glass-card">
+          <h4>Request a Free Quote / Consultation</h4>
+          <p>Fill out the form below to receive a response from our Napa office.</p>
+
+          <form id="quoteForm" onsubmit="handleQuoteSubmit(event)">
+            <div class="form-group-modern">
+              <label for="fullName">Your Full Name *</label>
+              <input type="text" id="fullName" class="input-glass" placeholder="e.g. Robert Smith" required>
+            </div>
+
+            <div class="form-group-modern">
+              <label for="emailAddr">Email Address *</label>
+              <input type="email" id="emailAddr" class="input-glass" placeholder="rsmith@example.com" required>
+            </div>
+
+            <div class="form-group-modern">
+              <label for="phoneNum">Phone Number *</label>
+              <input type="tel" id="phoneNum" class="input-glass" placeholder="(707) 555-0123" required>
+            </div>
+
+            <div class="form-group-modern">
+              <label for="practiceType">Practice Area of Interest *</label>
+              <select id="practiceType" class="input-glass" required>
+                <option value="" disabled selected>Select practice area...</option>
+                <option value="Limited Liability & Business Law">Corporate &amp; Business Law (LLC)</option>
+                <option value="Real Estate Law">Real Estate &amp; Vineyard Law</option>
+                <option value="Estate Planning & Trusts">Estate Planning &amp; Living Trusts</option>
+                <option value="Probate Administration">Probate Administration</option>
+                <option value="Other Legal Matter">Other Legal Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group-modern">
+              <label for="caseNotes">Case or Project Overview</label>
+              <textarea id="caseNotes" class="input-glass" placeholder="Briefly describe your legal needs (do not include sensitive confidential details)..."></textarea>
+            </div>
+
+            <div class="disclaimer-row">
+              <input type="checkbox" id="legalAgreement" required>
+              <label for="legalAgreement">I understand that submitting this inquiry does not create an attorney-client relationship until formal engagement.</label>
+            </div>
+
+            <button type="submit" class="btn-gold-pill" style="width: 100%; justify-content: center; padding: 13px;">
+              Submit Request <span class="arrow-icon">↗</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       FOOTER (DARK FULL WIDTH)
+       ======================================================== -->
+  <footer class="site-footer">
+    <div class="container-boxed">
+      <div class="footer-flex">
+        <a href="#home" class="footer-logo">
+          Donald<span>.</span> Logan
+        </a>
+
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#credentials">Credentials</a></li>
+          <li><a href="#office">Napa Office</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div>
+          &copy; <span id="year"></span> Donald J. Logan, Attorney at Law.
+        </div>
+      </div>
+
+      <div class="footer-disclaimer-text">
+        <strong>LEGAL NOTICE:</strong> The material presented on this site is provided for general informational purposes and does not constitute formal legal counsel. Prior results or peer recognitions (Martindale-Hubbell AV Preeminent®, SuperLawyers®) do not guarantee a similar outcome. An attorney-client relationship is only created upon mutual execution of a written retainer agreement.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast-pill" id="toastPill">
+    <span>✓</span> Consultation request submitted successfully! We will contact you shortly.
+  </div>
+
+  <!-- Interactive JavaScript -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function scrollCarousel(direction) {
+      const track = document.getElementById('servicesTrack');
+      const cardWidth = 340;
+      track.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
+    }
+
+    function handleQuoteSubmit(e) {
+      e.preventDefault();
+      const toast = document.getElementById('toastPill');
+      toast.style.display = 'inline-flex';
+      setTimeout(() => {
+        toast.style.display = 'none';
+      }, 5000);
+      document.getElementById('quoteForm').reset();
+    }
+  </script>
+</body>
+</html>
